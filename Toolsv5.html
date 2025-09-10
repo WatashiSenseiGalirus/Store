@@ -608,21 +608,35 @@ make run
     color: #000000 !important;
     transform: scale(1.2);
   }
+  .contact-links {
+  display: flex;
+  flex-direction: column; /* bikin tumpuk ke bawah */
+  gap: 15px;              /* jarak antar tombol */
+  align-items: center;    /* biar tombol tetap rata tengah */
+}
+
+.contact-btn.btn {
+  width: 80%;             /* tombol lebar (opsional, bisa 100%) */
+  max-width: 400px;       /* biar gak terlalu lebar di layar besar */
+  text-align: center;
+  }
 </style>
-    <section class="contact" aria-label="Kontak informasi">
-      <a href="https://tinyurl.com/wr2cckc8" target="_blank" rel="noopener noreferrer" class="contact-btn btn" aria-label="Room Chat">
-        Room Chat
-      </a>
-      
-      <h2 tabindex="0" class="section-title">Hubungi Kami</h2>
-      
-      <a href="https://wa.me/6285850268349" target="_blank" rel="noopener noreferrer" class="contact-btn btn" aria-label="WhatsApp kontak +62 858-5026-8349">
-        WhatsApp: +62 858-5026-8349
-      </a>
-      
-      <p tabindex="0" aria-label="Alamat email official">
-        <a href="mailto:galirusofficial@gmail.com" class="link-email" target="_blank" rel="noopener noreferrer">galirusofficial@gmail.com</a>
-      </p>
+   <section class="contact" aria-label="Kontak informasi">
+  <h2 tabindex="0" class="section-title">Hubungi Kami</h2>
+
+  <div class="contact-links">
+    <a href="https://tinyurl.com/wr2cckc8" target="_blank" rel="noopener noreferrer" class="contact-btn btn" aria-label="Room Chat">
+      Room Chat
+    </a>
+
+    <a href="https://wa.me/6285850268349" target="_blank" rel="noopener noreferrer" class="contact-btn btn" aria-label="WhatsApp kontak +62 858-5026-8349">
+      WhatsApp: +62 858-5026-8349
+    </a>
+
+    <a href="mailto:galirusofficial@gmail.com" class="contact-btn btn" target="_blank" rel="noopener noreferrer" aria-label="Alamat email official">
+      galirusofficial@gmail.com
+    </a>
+  </div>
 </section>
 
     <footer aria-label="Informasi hak cipta">
